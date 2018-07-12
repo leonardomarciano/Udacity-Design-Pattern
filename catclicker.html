@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Udacity - CatClicker</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+
+<body><center>
+    <img style="width: 300px; height: 300px; margin-top: 50px" id="catclick" src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+    <p id="counter" style="font-size: 20; font-family: 'Ubuntu', sans-serif;">0</p>
+</center>
+</body>
+<script>
+    var counter = 0
+    function addCount(){
+        return counter += 1
+    }
+    var elem = document.getElementById('catclick');
+    elem.addEventListener('click', function () {
+        document.getElementById('counter').innerHTML=addCount();
+    }, false);
+</script>
+
+</html>
